@@ -6,3 +6,221 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Kaushan Script', cursive;
 */
 
+/*GLOGAL START*/
+html {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.section-header01 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333333;
+}
+/*GLOGAL END*/
+/*HEADER START*/
+.header-container {
+    width: 90%;
+    margin: 0 auto;
+}
+.navbar-toggler .bar {
+    height: 3px;
+    width: 30px;
+    background-color: #fff;
+    display: block;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+#bar1 {
+    transform: translate(0, -4px);
+}
+#bar3 {
+    transform: translate(0, 4px);
+}
+.change #bar1 {
+    transform: translate(0, 4px) rotateZ(-45deg);
+}
+.change #bar3 {
+    transform: translate(0, -2px) rotate(45deg);
+}
+.change #bar2 {
+    opacity: 0;
+}
+.menu-bg {
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, #95E1D3, #95E1D3);
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+.change-bg {
+    width: 440px;
+    height: 440px;
+    transform: translate(60%, -30%);
+}
+.menu-bg
+ {
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.menu-bg {
+    z-index: 1;
+    margin-top: 25px;
+    margin-right: 45px;
+
+}
+.navbar {
+    z-index: 2;
+}
+.navbar-toggler {
+    border: none;
+}
+button:focus {
+    outline: none;
+    outline: none;
+}
+.navbar .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+}
+.navbar-nav li a {
+    color: #fff !important;
+}
+.navbar-nav li {
+    margin-left: 25px;
+}
+.navbar-nav li a:hover {
+    color: #FCE38A !important;
+}
+
+.navbar .header-icons .fa {
+    color: #fff;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.navbar .header-icons .fa:hover {
+    color: #FCE38A;
+}
+/*HEADER END*/
+/*LEAD SECTION START*/
+.lead {
+    padding-top: 130px;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 10px;
+}
+.lead-content {
+    max-width: 500px;
+    margin-bottom: 120px;
+}
+.creative-template {
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 1px;
+}
+.lead-text {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 55px;
+}
+.lead-line {
+    height: 2px;
+    width: 60px;
+}
+/****  BUTTON EFFECT START  ****/
+a.learn-more {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    padding: 8px 30px;
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+a svg,
+a svg rect {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+}
+
+a svg rect {
+    stroke: #fff;
+    stroke-width: 3px;
+    transition: 1s;
+    stroke-dasharray: 500,500;
+    stroke-dashoffset: 0;
+    
+}
+
+a:hover svg rect {
+    stroke-dashoffset: 282;
+    stroke-dasharray: 100, 400;
+    stroke: #fff;
+}
+/****  BUTTON EFFECT END  ****/
+/****   PROGRESS LINES START  ****/
+.progress-line01 {
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+}
+.red-line01 {
+    width: 25%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: red;
+}
+.progress-line02 {
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+}
+.red-line02 {
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: red;
+}
+.progress-line03 {
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+}
+.red-line03 {
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: red;
+}
+.progress-line04 {
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+}
+.red-line04 {
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: red;
+}
+.prog-text {
+    font-size: 20px;
+}
+.prog-text-nr {
+    font-size: 24px;
+    font-weight: bold;
+}
+/****   PROGRESS LINES END  ****/
+/*LEAD SECTION END*/
+
+

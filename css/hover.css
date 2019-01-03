@@ -1,30 +1,4 @@
-
-
-
-@media(min-width:576px){
-    
-}
-
-
-@media(min-width:768px){
-
-    .lead {
-        padding-top: 150px;
-    }
-
-    .creative-template {
-        font-size: 50px;
-    }
-    .lead-text {
-        font-size: 100px;
-        line-height: 100px;
-    }
-    
-    .header-container {
-        max-width: 720px;
-    }
-    
-    .hvr-underline-from-center {
+.hvr-underline-from-center {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -52,32 +26,4 @@
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
-}
-
-}
-
-
-
-@media(min-width:992px){
-
-.header-container {
-        max-width: 960px;
-    }
-
-
-}
-
-
-
-
-
-@media(min-width:1200px){
-    
-    .header-container {
-        max-width: 1212px !important;
-    }
-
-    .container {
-        max-width: 1212px !important;
-    }
 }
