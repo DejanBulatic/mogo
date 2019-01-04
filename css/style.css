@@ -42,6 +42,12 @@ html {
 .w-20 {
     width: 20%;
 }
+.w-80 {
+    width: 80%;
+}
+.mb-100 {
+    margin-bottom: 100px !important;
+}
 /*GLOGAL END*/
 /*HEADER START*/
 .header-container {
@@ -318,5 +324,20 @@ a:hover svg rect {
     font-size: 14px;
 }
 /*NUMBERS END*/
+/*SERVICES START*/
+
+.services-item {
+    border-bottom: 1px solid #E5E5E5;
+}
+.services-article-header {
+    font-size: 14px;
+    color: #333333;
+    font-weight: bold;
+}
+.services .fa {
+    font-size: 35px;
+    color: #95E1D3;
+}
+/*SERVICES END*/
 
 
