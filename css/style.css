@@ -39,6 +39,9 @@ html {
     font-size: 1rem;
     color: #999999;
 }
+.w-20 {
+    width: 20%;
+}
 /*GLOGAL END*/
 /*HEADER START*/
 .header-container {
@@ -108,6 +111,7 @@ button:focus {
 }
 .navbar-nav li a {
     color: #fff !important;
+    transition: 0.3s linear;
 }
 .navbar-nav li {
     margin-left: 25px;
@@ -122,9 +126,7 @@ button:focus {
     text-decoration: none;
     transition: 0.3s ease;
 }
-.navbar .header-icons .fa:hover {
-    color: #FCE38A;
-}
+
 /*HEADER END*/
 /*LEAD SECTION START*/
 .lead {
@@ -293,5 +295,28 @@ a:hover svg rect {
     box-shadow: 5px 5px 10px #95E1D3;
 }
 /*ABOUT US END*/
+/*NUMBERS START*/
+.numbers {
+    display: none;
+    background-color: #95E1D3;
+}
+.numbers-item {
+    padding: 60px 0px;
+    border-left: 1px solid #fff;
+    min-width: 130px;
+}
+.numbers-item:last-of-type {
+    border-right: 1px solid #fff;
+}
+.numbers-number {
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 80px;
+    margin-bottom: 8px;
+}
+.numbers-text {
+    font-size: 14px;
+}
+/*NUMBERS END*/
 
 
