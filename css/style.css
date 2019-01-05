@@ -11,6 +11,13 @@ html {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif !important;
 }
+img {
+    max-width: 100%;
+}
+.section-introduction {
+    max-width: 950px;
+    margin-bottom: 80px;
+}
 .section-header01 {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
@@ -260,10 +267,6 @@ a:hover svg rect {
     width: 100%;
     display: block;
 }
-.about-us-content {
-    max-width: 950px;
-    margin-bottom: 80px;
-}
 .about-hover {
     background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
     top: 0;
@@ -357,5 +360,20 @@ a:hover svg rect {
     max-width: 50%;
 }
 /*DESIGN END*/
+/*WHAT WE DO START*/
+.whatwedo {
+    padding: 100px 0;
+}
+.whatwedo  button .fa {
+    color: #95E1D3;
+}
+.whatwedo h5 button {
+    color: #333333 !important;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+/*WHAT WE DO END*/
 
 
