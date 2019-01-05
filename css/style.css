@@ -405,5 +405,60 @@ a:hover svg rect {
 }
 
 /*JOHN DOE QUOTE SECTION END*/
+/*TEAM START*/
+.team {
+    padding: 100px 0;
+}
+.team-hover {
+    background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.2s linear;
+}
+.team figure:hover .team-hover {
+    opacity: 100;
+}
+.team figure {
+    transition: 0.3s linear;
+}
+.team figure:hover{
+    box-shadow: 5px 5px 10px #95E1D3;
+}
+.team h6 {
+    color: #333333;
+    font-size: 14px;
+}
+.team img {
+    width: 100%;
+}
+.team article nav {
+     position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translate(-0%, -50%);
+}
+.team article a{
+    text-decoration: none;
+}
+.team article .fa {
+    color: #F38181;
+    height: 40px;
+    width: 40px;
+    background: #FCE38A;
+    font-size: 20px;
+    line-height: 40px;
+    transition: 0.3s linear;
+}
+.team article .fa:hover {
+    background: #F38181;
+    color: #fff;
+}
+.team article {
+    max-width: 80%;
+}
+/*TEAM END*/
 
 

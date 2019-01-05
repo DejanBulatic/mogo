@@ -16,6 +16,15 @@
     bottom: -40px;
     right: -80px;
 }
+.team article .fa {
+    color: #F38181;
+    height: 50px;
+    width: 50px;
+    background: #FCE38A;
+    font-size: 20px;
+    line-height: 50px;
+    transition: 0.3s linear;
+}
 }
 
 
@@ -83,6 +92,10 @@
     top: 50%;
     left: -45px;
 }
+.team article {
+    max-width: 100%;
+}
+
 }
 
 
@@ -98,6 +111,12 @@
 .phone {
     bottom: -40px;
     right: -100px;
+}
+.team article .fa {
+    height: 56px;
+    width: 56px;
+    font-size: 25px;
+    line-height: 56px;
 }
 
 
