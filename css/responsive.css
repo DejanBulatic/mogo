@@ -75,6 +75,14 @@
 .design-content {
     max-width: 40%;
 }
+.quote-name {
+    margin-left: 80px;
+    position: relative;
+}
+.quote-name::before {
+    top: 50%;
+    left: -45px;
+}
 }
 
 

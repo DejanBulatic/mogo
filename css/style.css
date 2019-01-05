@@ -46,6 +46,29 @@ img {
     font-size: 1rem;
     color: #999999;
 }
+.quote-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: #999999;
+    font-weight: 300;
+    font-style: italic;
+}
+.quote-name {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333333;
+}
+.quote-name::before {
+    content: '';
+    height: 3px;
+    width: 60px;
+    background-color: #F38181; 
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
 .w-20 {
     width: 20%;
 }
@@ -375,5 +398,12 @@ a:hover svg rect {
     text-transform: uppercase;
 }
 /*WHAT WE DO END*/
+/*JOHN DOE QUOTE SECTION START*/
+.john-doe {
+    background: #F8F8F8;
+    padding: 70px 0;
+}
+
+/*JOHN DOE QUOTE SECTION END*/
 
 
