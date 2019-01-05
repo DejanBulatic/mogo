@@ -2,9 +2,19 @@
 
 
 @media(min-width:576px){
+    
+    .menu-bg {
+    top: 4px;
+    right: 20px;
+    position: absolute;
+}
 
     .services-item:nth-child(n+5) {
     border-bottom: none !important;
+}
+.phone {
+    bottom: -40px;
+    right: -80px;
 }
 }
 
@@ -62,6 +72,9 @@
     .services {
     padding: 100px 0;
 }
+.design-content {
+    max-width: 40%;
+}
 }
 
 
@@ -73,6 +86,10 @@
     }
     .services-item:nth-child(n+4) {
     border-bottom: none !important;
+}
+.phone {
+    bottom: -40px;
+    right: -100px;
 }
 
 
@@ -91,4 +108,8 @@
     .container {
         max-width: 1212px !important;
     }
+    .phone {
+    bottom: -50px;
+    right: -130px;
+}
 }

@@ -89,10 +89,9 @@ html {
     height: 440px;
     transform: translate(60%, -30%);
 }
-.menu-bg
- {
-    top: 0;
-    right: 0;
+.menu-bg {
+    top: 4px;
+    right: 7px;
     position: absolute;
 }
 .menu-bg {
@@ -339,5 +338,24 @@ a:hover svg rect {
     color: #95E1D3;
 }
 /*SERVICES END*/
+/*DESIGN START*/
+.design {
+    padding-top: 100px;
+    background: center;
+    background-size: cover;
+}
+.design-content {
+    max-width: 60%;
+}
+.design-content img {
+    width: 100%;
+    display: block;
+}
+.phone {
+    bottom: -20px;
+    right: -50px;
+    max-width: 50%;
+}
+/*DESIGN END*/
 
 
