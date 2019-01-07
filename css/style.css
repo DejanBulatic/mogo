@@ -167,11 +167,13 @@ button:focus {
     transition: 0.3s ease;
 }
 header {
+    padding-top: 5px;
     transition: 0.3s linear;
 }
 .custom-nav-scrol {
     background: #95E1D3;
     box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+    padding-top: 0px;
 }
 
 /*HEADER END*/
@@ -531,7 +533,7 @@ a:hover svg rect {
 /*joshua quote end*/
 /*CLIENTS START*/
 .clients {
-    padding: 120px 0;
+    padding: 120px 0 100px 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -560,5 +562,41 @@ a:hover svg rect {
     max-width: 550px;
 }
 /*CLIENTS END*/
+/*BLOG START*/
+.blog {
+    padding: 100px 0;
+}
+.blog figure {
+    position: relative;
+}
+.blog .blogDate {
+    position: absolute;
+    left: -5%;
+    bottom: 10px;
+    background: #95E1D3;
+    padding: 10px;
+    text-align: center;
+}
+.blog .blogDay {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 30px;
+}
+.blog .blogMonth {
+    color: #fff;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.blog .fa {
+    color: #95E1D3;
+}
+.blog .blog-text {
+    line-height: 1.5rem;
+    height: 45px;
+    overflow: hidden;
+}
+/*BLOG END*/
 
 
