@@ -41,6 +41,11 @@ img {
     left: 50%;
     transform: translate(-50%, 0);
 }
+.article-header {
+    font-size: 14px;
+    color: #333333;
+    font-weight: bold;
+}
 .paragraph-text {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -354,11 +359,6 @@ a:hover svg rect {
 .services-item {
     border-bottom: 1px solid #E5E5E5;
 }
-.services-article-header {
-    font-size: 14px;
-    color: #333333;
-    font-weight: bold;
-}
 .services .fa {
     font-size: 35px;
     color: #95E1D3;
@@ -518,8 +518,40 @@ a:hover svg rect {
     padding: 100px 0;
 }
 .joshua-quote img {
+    width: 230px;
     border-radius: 50%;
 }
 /*joshua quote end*/
+/*CLIENTS START*/
+.clients {
+    padding: 120px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.clients img {
+    border-radius: 50%;
+}
+.client-job {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    font-style: italic;
+    position: relative;
+}
+.client-job::after {
+    content: '';
+    content: '';
+    height: 3px;
+    width: 60px;
+    background-color: #F38181; 
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.clients-item {
+    max-width: 500px;
+}
+/*CLIENTS END*/
 
 
