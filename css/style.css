@@ -378,7 +378,7 @@ a:hover svg rect {
     display: block;
 }
 .phone {
-    bottom: -20px;
+    bottom: -28px;
     right: -50px;
     max-width: 50%;
 }
@@ -460,5 +460,11 @@ a:hover svg rect {
     max-width: 80%;
 }
 /*TEAM END*/
+/*BRANDS START*/
+.brands {
+    background: #F8F8F8;
+    padding: 50px 0;
+}
+/*BRANDS END*/
 
 
