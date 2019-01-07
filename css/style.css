@@ -513,5 +513,13 @@ a:hover svg rect {
     width: 100%;
 }
 /*WORK SECTION END*/
+/*joshua quote start*/
+.joshua-quote {
+    padding: 100px 0;
+}
+.joshua-quote img {
+    border-radius: 50%;
+}
+/*joshua quote end*/
 
 
