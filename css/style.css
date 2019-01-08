@@ -599,5 +599,38 @@ a:hover svg rect {
     overflow: hidden;
 }
 /*BLOG END*/
-
+/*MAP START*/
+.map-section {
+    padding: 80px 0;
+    background: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+.map-link-wrap {
+        width: 200px;
+}
+.map-section .fa {
+    color: #F38181;
+    font-size: 25px;
+    display: block;
+}
+.map-section a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    color: #F38181;
+    position: relative;
+}
+.map-section a::after {
+    content: '';
+    height: 3px;
+    width: 60px;
+    background-color: #F38181; 
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+/*MAP END*/
 
