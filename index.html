@@ -27,794 +27,980 @@
     </head>
     <body>
         <!--HEADER START-->
-        <header class="fixed-top">
+        <header class="fixed-top" id="custom-top-header">
             <div class="header-container">
                 <!--NAVIGATION BAR START-->
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand text-white" href="#">MoGo</a>
                     <button id="headMenu" onclick="onclickMenu()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-                        <div id="bar1" class="bar"></div>
-                        <div id="bar2" class="bar"></div>
-                        <div id="bar3" class="bar"></div>
+                        <span id="bar1" class="bar"></span>
+                        <span id="bar2" class="bar"></span>
+                        <span id="bar3" class="bar"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse mx-4 mt-2" id="main-menu">
-                        <ul class="navbar-nav ml-auto mb-2 mb-md-0 text-uppercase text-right">
-                            <li class="nav-item active hvr-underline-from-center">
-                                <a class="nav-link" href="#">about<span class="sr-only">(current)</span></a>
+                    <div class="collapse navbar-collapse mx-4 mt-2 pb-2 pb-md-0" id="main-menu">
+                        <ul class="navbar-nav ml-auto mb-2 mb-md-0 text-uppercase text-center text-md-right">
+                            <li class="nav-item active">
+                                <a class="nav-link hvr-underline-from-center px-0 custom-active" href="#about">about<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-center px-0" href="#service">service</a>
                             </li>
                             <li class="nav-item hvr-underline-from-center">
-                                <a class="nav-link" href="#">service</a>
+                                <a class="nav-link hvr-underline-from-center px-0" href="#work">work</a>
                             </li>
                             <li class="nav-item hvr-underline-from-center">
-                                <a class="nav-link" href="#">work</a>
+                                <a class="nav-link hvr-underline-from-center px-0" href="#blog">blog</a>
                             </li>
                             <li class="nav-item hvr-underline-from-center">
-                                <a class="nav-link" href="#">blog</a>
-                            </li>
-                            <li class="nav-item hvr-underline-from-center">
-                                <a class="nav-link" href="#">contact</a>
+                                <a class="nav-link hvr-underline-from-center px-0" href="#contact">contact</a>
                             </li>
                         </ul>
-                        <div class="header-icons text-right">
+                        <div class="d-flex header-icons justify-content-center pt-2 pt-md-0">
                             <a href="#" class="fa fa-shopping-cart"></a>
                             <a href="#" class="fa fa-search"></a>
                         </div>
                     </div>
                 </nav>
-                <div class="menu-bg" id="menuBg"></div>
                 <!--NAVIGATION BAR END-->
             </div>
         </header><!--HEADER END-->
-        <!--LEAD SECTION START-->
-        <section class="lead text-center text-white" style="background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url(img/eagle.png)">
-            <div class="container">
-                <div class="lead-content mx-auto">
-                    <h2 class="creative-template mb-4">Creative Template</h2>
-                    <h1 class="lead-text text-uppercase mb-5">welcome to&nbsp;mogo</h1>
-                    <div class="lead-line bg-white mx-auto mb-5"></div>
-                    <a href="#" class="learn-more text-uppercase text-white"><svg><rect></rect></svg>learn more</a>
-                </div>
-                <div class="row px-5">
-                    <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-lg-0">
-                        <article>
-                            <div class="progress-line01 position-relative mb-2">
-                                <div class="red-line01 position-absolute"></div>
-                            </div>
-                            <p class="prog-text text-uppercase text-left"><span class="prog-text-nr">01</span> intro</p>
-                        </article>
+        <main>
+            <!--LEAD SECTION START-->
+            <section class="lead text-center text-white" id="lead-section" style="background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url(img/eagle.png)">
+                <div class="container">
+                    <div class="lead-content mx-auto text-center">
+                        <h2 class="creative-template mb-4">Creative Template</h2>
+                        <h1 class="lead-text text-uppercase mb-5">welcome to&nbsp;mogo</h1>
+                        <div class="lead-line bg-white mx-auto mb-5"></div>
+                        <a href="#" class="learn-more text-uppercase text-white">learn more</a>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-lg-0">
-                        <article>
-                            <div class="progress-line02 position-relative mb-2">
-                                <div class="red-line02 position-absolute"></div>
-                            </div>
-                            <p class="prog-text text-uppercase text-left"><span class="prog-text-nr">02</span> work</p>
-                        </article>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-lg-0">
-                        <article>
-                            <div class="progress-line03 position-relative mb-2">
-                                <div class="red-line03 position-absolute"></div>
-                            </div>
-                            <p class="prog-text text-uppercase text-left"><span class="prog-text-nr">03</span> about</p>
-                        </article>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-lg-0">
-                        <article>
-                            <div class="progress-line04 position-relative mb-0">
-                                <div class="red-line04 position-absolute"></div>
-                            </div>
-                            <p class="prog-text text-uppercase text-left"><span class="prog-text-nr">04</span> contact</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--LEAD SECTION END-->
-        <!--ABOUT US SECTION START-->
-        <section class="about-us">
-            <div class="container">
-                <div class="section-introduction text-center mx-auto">
-                    <h4 class="section-header01">What we do</h4>
-                    <h3 class="section-header02">story about us</h3>
-                    <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-                <div class="row justify-content-between">
-                    <div class="col-12 col-md-4 mb-4 mb-md-0">
-                        <figure class="position-relative">
-                            <img src="img/about-01.jpg" alt="about us"/>
-                            <div class="about-hover position-absolute">
-                                <div class="super-team">
-                                    <a href="#" class="fa fa-user text-white"></a><br>
-                                    <a href="#" class="about-hover-text text-uppercase text-white">super team</a>
+                    <div class="row px-5">
+                        <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-lg-0">
+                            <article>
+                                <div class="progress-line01 position-relative mb-2">
+                                    <div class="red-line01 position-absolute"></div>
                                 </div>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="col-12 col-md-4 mb-4 mb-md-0">
-                        <figure class="position-relative">
-                            <img src="img/about-02.jpg" alt=""/>
-                            <div class="about-hover position-absolute">
-                                <div class="super-team">
-                                    <a href="#" class="fa fa-user text-white"></a><br>
-                                    <a href="#" class="about-hover-text text-uppercase text-white">super team</a>
+                                <p class="prog-text text-uppercase text-left"><span class="prog-text-nr">01</span> intro</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-lg-0">
+                            <article>
+                                <div class="progress-line02 position-relative mb-2">
+                                    <div class="red-line02 position-absolute"></div>
                                 </div>
-                            </div>
-                        </figure>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <figure class="position-relative">
-                            <img src="img/about-03.jpg" alt="about us"/>
-                            <div class="about-hover position-absolute">
-                                <div class="super-team">
-                                    <a href="#" class="fa fa-user text-white"></a><br>
-                                    <a href="#" class="about-hover-text text-uppercase text-white">super team</a>
+                                <p class="prog-text text-uppercase text-left"><span class="prog-text-nr">02</span> work</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-lg-0">
+                            <article>
+                                <div class="progress-line03 position-relative mb-2">
+                                    <div class="red-line03 position-absolute"></div>
                                 </div>
-                            </div>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section><!--ABOUT US SECTION END-->
-        <!--NUMBERS SECTON START-->
-        <section class="numbers">
-            <div class="container">
-                <div class="numbers-content d-flex flex-wrap justify-content-center">
-                    <div class="w-20 numbers-item text-center">
-                        <article class="">
-                            <p class="numbers-number text-white">42</p>
-                            <p class="numbers-text text-white">Web Design Projects</p>
-                        </article>
-                    </div>
-                    <div class="w-20 numbers-item text-center">
-                        <article>
-                            <p class="numbers-number text-white">123</p>
-                            <p class="numbers-text text-white">happy client</p>
-                        </article>
-                    </div>
-                    <div class="w-20 numbers-item text-center">
-                        <article>
-                            <p class="numbers-number text-white">15</p>
-                            <p class="numbers-text text-white">award winner</p>
-                        </article>
-                    </div>
-                    <div class="w-20 numbers-item text-center">
-                        <article>
-                            <p class="numbers-number text-white">99</p>
-                            <p class="numbers-text text-white">cup of coffee</p>
-                        </article>
-                    </div>
-                    <div class="w-20 numbers-item text-center">
-                        <article>
-                            <p class="numbers-number text-white">24</p>
-                            <p class="numbers-text text-white">members</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section><!--NUMBERS SECTON END-->
-        <!--SERVICES SECTION START-->
-        <section class="services">
-            <div class="container">
-                <div class="section-introduction text-center mx-auto">
-                    <h4 class="section-header01">We work with</h4>
-                    <h3 class="section-header02 mb-100">amazing services</h3>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-4 services-item d-flex mb-5">
-                        <div class="w-20 text-right pr-4"><span class="fa fa-camera"></span></div>
-                        <div class="w-80 mb-4">
-                            <h6 class="article-header text-uppercase">Photography</h6>
-                            <p class="paragraph-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing 
-                                elit, sed do eiusmod tempor.
-                            </p>
+                                <p class="prog-text text-uppercase text-left"><span class="prog-text-nr">03</span> about</p>
+                            </article>
                         </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 services-item d-flex mb-5">
-                        <div class="w-20 text-right pr-4"><span class="fa fa-line-chart"></span></div>
-                        <div class="w-80 mb-4">
-                            <h6 class="article-header text-uppercase">Web Design</h6>
-                            <p class="paragraph-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing 
-                                elit, sed do eiusmod tempor.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 services-item d-flex mb-5">
-                        <div class="w-20 text-right pr-4"><span class="fa fa-desktop"></span></div>
-                        <div class="w-80 mb-4">
-                            <h6 class="article-header text-uppercase">Creativity</h6>
-                            <p class="paragraph-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing 
-                                elit, sed do eiusmod tempor.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 services-item d-flex mb-5">
-                        <div class="w-20 text-right pr-4"><span class="fa fa-folder-o"></span></div>
-                        <div class="w-80 mb-4">
-                            <h6 class="article-header text-uppercase">seo</h6>
-                            <p class="paragraph-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing 
-                                elit, sed do eiusmod tempor.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 services-item d-flex mb-5">
-                        <div class="w-20 text-right pr-4"><span class="fa fa-home"></span></div>
-                        <div class="w-80 mb-4">
-                            <h6 class="article-header text-uppercase">Css/Html</h6>
-                            <p class="paragraph-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing 
-                                elit, sed do eiusmod tempor.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 services-item d-flex">
-                        <div class="w-20 text-right pr-4"><span class="fa fa-picture-o"></span></div>
-                        <div class="w-80 mb-4">
-                            <h6 class="article-header text-uppercase">digital</h6>
-                            <p class="paragraph-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing 
-                                elit, sed do eiusmod tempor.
-                            </p>
+                        <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-lg-0">
+                            <article>
+                                <div class="progress-line04 position-relative mb-0">
+                                    <div class="red-line04 position-absolute"></div>
+                                </div>
+                                <p class="prog-text text-uppercase text-left"><span class="prog-text-nr">04</span> contact</p>
+                            </article>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section><!--SERVICES SECTION END-->
-        <!--DESIGN SECTION START-->
-        <section class="design" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/forest.png)">
-            <div class="container">
-                <div class="section-introduction text-center mx-auto">
-                    <h4 class="section-header01">For all devices</h4>
-                    <h3 class="section-header02 mb-100">Unique design</h3>
-                </div>
-                <div class="mx-auto design-content">
-                    <figure class="text-center position-relative">
-                        <img class="d-inline-block" src="img/tablet.png" alt="tablet"/>
-                        <img class="phone position-absolute" src="img/phone.png" alt="phone"/>
-                    </figure>
-                </div>
-        </section><!--DESIGN SECTION END-->
-        <!--WHAT WE DO SECTION START-->
-        <section class="whatwedo">
-            <div class="container">
-                <div class="section-introduction text-center mx-auto">
-                    <h4 class="section-header01">Service</h4>
-                    <h3 class="section-header02">what we do</h3>
-                    <p class="paragraph-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    </p>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <figure>
-                            <img src="img/what.jpg" alt="What we do"/>
-                        </figure>
+            </section>
+            <!--LEAD SECTION END-->
+            <!--ABOUT US SECTION START-->
+            <section class="about-us" id="about">
+                <div class="container">
+                    <div class="section-introduction text-center mx-auto">
+                        <h4 class="section-header01">What we do</h4>
+                        <h3 class="section-header02">story about us</h3>
+                        <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. </p>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <aside>
-                            <div class="accordion" id="accordionExample">
-                                <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                <span class="fa fa-camera mr-2"></span> photography
-                                            </button>
-                                        </h5>
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-4 mb-4 mb-md-0">
+                            <figure class="position-relative">
+                                <img src="img/about-01.jpg" alt="about us"/>
+                                <div class="about-hover position-absolute">
+                                    <div class="super-team">
+                                        <a href="#" class="fa fa-user text-white"></a><br>
+                                        <a href="#" class="about-hover-text text-uppercase text-white">super team</a>
                                     </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-12 col-md-4 mb-4 mb-md-0">
+                            <figure class="position-relative">
+                                <img src="img/about-02_1.jpg" alt=""/>
+                                <div class="about-hover position-absolute">
+                                    <div class="super-team">
+                                        <a href="#" class="fa fa-user text-white"></a><br>
+                                        <a href="#" class="about-hover-text text-uppercase text-white">super team</a>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <figure class="position-relative">
+                                <img src="img/about-03.jpg" alt="about us"/>
+                                <div class="about-hover position-absolute">
+                                    <div class="super-team">
+                                        <a href="#" class="fa fa-user text-white"></a><br>
+                                        <a href="#" class="about-hover-text text-uppercase text-white">super team</a>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section><!--ABOUT US SECTION END-->
+            <!--NUMBERS SECTON START-->
+            <section class="numbers">
+                <div class="container">
+                    <div class="numbers-content d-flex flex-wrap justify-content-center">
+                        <div class="w-20 numbers-item text-center">
+                            <article class="">
+                                <p class="numbers-number text-white">42</p>
+                                <p class="numbers-text text-white">Web Design Projects</p>
+                            </article>
+                        </div>
+                        <div class="w-20 numbers-item text-center">
+                            <article>
+                                <p class="numbers-number text-white">123</p>
+                                <p class="numbers-text text-white">happy client</p>
+                            </article>
+                        </div>
+                        <div class="w-20 numbers-item text-center">
+                            <article>
+                                <p class="numbers-number text-white">15</p>
+                                <p class="numbers-text text-white">award winner</p>
+                            </article>
+                        </div>
+                        <div class="w-20 numbers-item text-center">
+                            <article>
+                                <p class="numbers-number text-white">99</p>
+                                <p class="numbers-text text-white">cup of coffee</p>
+                            </article>
+                        </div>
+                        <div class="w-20 numbers-item text-center">
+                            <article>
+                                <p class="numbers-number text-white">24</p>
+                                <p class="numbers-text text-white">members</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section><!--NUMBERS SECTON END-->
+            <!--SERVICES SECTION START-->
+            <section class="services" id="service">
+                <div class="container">
+                    <div class="section-introduction text-center mx-auto">
+                        <h4 class="section-header01">We work with</h4>
+                        <h3 class="section-header02 mb-100">amazing services</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-4 services-item d-flex mb-5">
+                            <div class="w-20 text-right pr-4"><span class="fa fa-camera"></span></div>
+                            <div class="w-80 mb-4">
+                                <h6 class="article-header text-uppercase">Photography</h6>
+                                <p class="paragraph-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                    elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 services-item d-flex mb-5">
+                            <div class="w-20 text-right pr-4"><span class="fa fa-line-chart"></span></div>
+                            <div class="w-80 mb-4">
+                                <h6 class="article-header text-uppercase">Web Design</h6>
+                                <p class="paragraph-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                    elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 services-item d-flex mb-5">
+                            <div class="w-20 text-right pr-4"><span class="fa fa-desktop"></span></div>
+                            <div class="w-80 mb-4">
+                                <h6 class="article-header text-uppercase">Creativity</h6>
+                                <p class="paragraph-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                    elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 services-item d-flex mb-5">
+                            <div class="w-20 text-right pr-4"><span class="fa fa-folder"></span></div>
+                            <div class="w-80 mb-4">
+                                <h6 class="article-header text-uppercase">seo</h6>
+                                <p class="paragraph-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                    elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 services-item d-flex mb-5">
+                            <div class="w-20 text-right pr-4"><span class="fa fa-home"></span></div>
+                            <div class="w-80 mb-4">
+                                <h6 class="article-header text-uppercase">Css/Html</h6>
+                                <p class="paragraph-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                    elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 services-item d-flex">
+                            <div class="w-20 text-right pr-4"><span class="fa fa-picture-o"></span></div>
+                            <div class="w-80 mb-4">
+                                <h6 class="article-header text-uppercase">digital</h6>
+                                <p class="paragraph-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                    elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--SERVICES SECTION END-->
+            <!--DESIGN SECTION START-->
+            <section class="design" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/forest.png)">
+                <div class="container">
+                    <div class="section-introduction text-center mx-auto">
+                        <h4 class="section-header01">For all devices</h4>
+                        <h3 class="section-header02 mb-100">Unique design</h3>
+                    </div>
+                    <div class="mx-auto design-content">
+                        <figure class="text-center position-relative">
+                            <img class="d-inline-block" src="img/tablet.png" alt="tablet"/>
+                            <img class="phone position-absolute" src="img/phone.png" alt="phone"/>
+                        </figure>
+                    </div>
+            </section><!--DESIGN SECTION END-->
+            <!--WHAT WE DO SECTION START-->
+            <section class="whatwedo">
+                <div class="container">
+                    <div class="section-introduction text-center mx-auto">
+                        <h4 class="section-header01">Service</h4>
+                        <h3 class="section-header02">what we do</h3>
+                        <p class="paragraph-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <figure>
+                                <img src="img/what.jpg" alt="What we do"/>
+                            </figure>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <aside>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <span class="fa fa-camera mr-2"></span> photography
+                                                </button>
+                                            </h5>
+                                        </div>
 
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                        <div class="card-body paragraph-text">
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit, sed do eiusmod tempor 
-                                            incididunt ut labore et dolore magna aliqua. 
-                                            Ut enim ad minim veniam, quis nostrud exercitation 
-                                            ullamco laboris nisi ut aliquip ex ea 
-                                            commodo consequat. Duis aute irure dolor 
-                                            in reprehenderit in voluptate velit esse 
-                                            cillum dolore eu fugiat nulla pariatur. 
-                                            Excepteur sint occaecat cupidatat non 
-                                            proident, sunt in culpa qui officia deserunt 
-                                            mollit anim id est laborum.                                        
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                            <div class="card-body paragraph-text">
+                                                Lorem ipsum dolor sit amet, consectetur 
+                                                adipiscing elit, sed do eiusmod tempor 
+                                                incididunt ut labore et dolore magna aliqua. 
+                                                Ut enim ad minim veniam, quis nostrud exercitation 
+                                                ullamco laboris nisi ut aliquip ex ea 
+                                                commodo consequat. Duis aute irure dolor 
+                                                in reprehenderit in voluptate velit esse 
+                                                cillum dolore eu fugiat nulla pariatur. 
+                                                Excepteur sint occaecat cupidatat non 
+                                                proident, sunt in culpa qui officia deserunt 
+                                                mollit anim id est laborum.                                        
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingTwo">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                <span class="fa fa-camera mr-2"></span> creativity
-                                            </button>
-                                        </h5>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                        <div class="card-body paragraph-text">
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit, sed do eiusmod tempor 
-                                            incididunt ut labore et dolore magna aliqua. 
-                                            Ut enim ad minim veniam, quis nostrud exercitation 
-                                            ullamco laboris nisi ut aliquip ex ea 
-                                            commodo consequat. Duis aute irure dolor 
-                                            in reprehenderit in voluptate velit esse 
-                                            cillum dolore eu fugiat nulla pariatur. 
-                                            Excepteur sint occaecat cupidatat non 
-                                            proident, sunt in culpa qui officia deserunt 
-                                            mollit anim id est laborum.                                        
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <span class="fa fa-camera mr-2"></span> creativity
+                                                </button>
+                                            </h5>
                                         </div>
-                                    </div>
-
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingThree">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                <span class="fa fa-camera mr-2"></span> web design
-                                            </button>
-                                        </h5>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                        <div class="card-body paragraph-text">
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit, sed do eiusmod tempor 
-                                            incididunt ut labore et dolore magna aliqua. 
-                                            Ut enim ad minim veniam, quis nostrud exercitation 
-                                            ullamco laboris nisi ut aliquip ex ea 
-                                            commodo consequat. Duis aute irure dolor 
-                                            in reprehenderit in voluptate velit esse 
-                                            cillum dolore eu fugiat nulla pariatur. 
-                                            Excepteur sint occaecat cupidatat non 
-                                            proident, sunt in culpa qui officia deserunt 
-                                            mollit anim id est laborum.                                        
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                            <div class="card-body paragraph-text">
+                                                Lorem ipsum dolor sit amet, consectetur 
+                                                adipiscing elit, sed do eiusmod tempor 
+                                                incididunt ut labore et dolore magna aliqua. 
+                                                Ut enim ad minim veniam, quis nostrud exercitation 
+                                                ullamco laboris nisi ut aliquip ex ea 
+                                                commodo consequat. Duis aute irure dolor 
+                                                in reprehenderit in voluptate velit esse 
+                                                cillum dolore eu fugiat nulla pariatur. 
+                                                Excepteur sint occaecat cupidatat non 
+                                                proident, sunt in culpa qui officia deserunt 
+                                                mollit anim id est laborum.                                        
+                                            </div>
                                         </div>
 
                                     </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    <span class="fa fa-camera mr-2"></span> web design
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                            <div class="card-body paragraph-text">
+                                                Lorem ipsum dolor sit amet, consectetur 
+                                                adipiscing elit, sed do eiusmod tempor 
+                                                incididunt ut labore et dolore magna aliqua. 
+                                                Ut enim ad minim veniam, quis nostrud exercitation 
+                                                ullamco laboris nisi ut aliquip ex ea 
+                                                commodo consequat. Duis aute irure dolor 
+                                                in reprehenderit in voluptate velit esse 
+                                                cillum dolore eu fugiat nulla pariatur. 
+                                                Excepteur sint occaecat cupidatat non 
+                                                proident, sunt in culpa qui officia deserunt 
+                                                mollit anim id est laborum.                                        
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </aside>
+                            </aside>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section><!--WHAT WE DO SECTION END-->
-        <!--JOHN DOE QUOTE SECTION START-->
-        <section class="john-doe">
-            <div class="container">
-                <div class="section-introduction mx-auto mb-0">
-                    <div class="row just">
-                        <div class="col-12 col-md-2 mb-3 mb-md-0">
-                            <figure class="text-center">
+            </section><!--WHAT WE DO SECTION END-->
+            <!--JOHN DOE QUOTE SECTION START-->
+            <section class="john-doe">
+                <div class="container">
+                    <div class="section-introduction mx-auto mb-0">
+                        <div class="row just">
+                            <div class="col-12 col-md-2 mb-3 mb-md-0">
+                                <figure class="text-center">
+                                    <img src="http://via.placeholder.com/150x150">
+                                </figure>
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <article>
+                                    <p class="quote-paragraph text-center text-md-left mb-5 mb-md-3">
+                                        “Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                        elit, sed do eiusmod tempor incididunt ut labore 
+                                        et dolore magna aliqua. Ut enim ad minim veniam, 
+                                        quis nostrud exercitation.”
+                                    </p>
+                                    <h4 class="quote-name text-center text-md-left position-relative">John Doe</h4>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--JOHN DOE QUOTE SECTION END-->
+            <!--    TEAM SECTION START-->
+            <section class="team">
+                <div class="container">
+                    <div class="section-introduction text-center mx-auto">
+                        <h4 class="section-header01">Who we are</h4>
+                        <h3 class="section-header02">meet our team</h3>
+                        <p class="paragraph-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-12 col-md-4 mb-4 mb-md-0">
+                            <article class="mx-auto mx-md-0">
+                                <figure class="position-relative mb-4">
+                                    <img src="img/member-01.jpg" alt="Team member"/>
+                                    <div class="team-hover position-absolute">
+                                        <div class="social d-flex justify-content-center">
+                                            <a href="#" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-pinterest-p"></a>
+                                            <a href="#" class="fa fa-instagram"></a>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h6 class="article-header">Matthew Dix</h6>
+                                <p class="paragraph-text font-italic">Graphic Design</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-4 mb-4 mb-md-0">
+                            <article class="mx-auto mx-md-0">
+                                <figure class="position-relative mb-4">
+                                    <img src="img/member-02.jpg" alt="Team member"/>
+                                    <div class="team-hover position-absolute">
+                                        <div class="social d-flex justify-content-center">
+                                            <a href="#" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-pinterest-p"></a>
+                                            <a href="#" class="fa fa-instagram"></a>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h6 class="article-header">Christopher Campbell</h6>
+                                <p class="paragraph-text font-italic">Branding/UX design</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-4 mb-4 mb-md-0">
+                            <article class="mx-auto mx-md-0">
+                                <figure class="position-relative mb-4">
+                                    <img src="img/member-03.jpg" alt="Team member"/>
+                                    <div class="team-hover position-absolute">
+                                        <div class="social d-flex justify-content-center">
+                                            <a href="#" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-pinterest-p"></a>
+                                            <a href="#" class="fa fa-instagram"></a>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <h6 class="article-header">Michael Fertig </h6>
+                                <p class="paragraph-text font-italic">Developer</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section><!--    TEAM SECTION END-->
+            <!--        BRANDS SECTION START-->
+            <section class="brands">
+                <div class="container">
+                    <div class="row text-center  justify-content-between">
+                        <div class="col-6 col-sm-4 col-md-2">
+                            <figure>
                                 <img src="http://via.placeholder.com/150x150">
                             </figure>
                         </div>
-                        <div class="col-12 col-md-10">
+                        <div class="col-6 col-sm-4 col-md-2">
+                            <figure>
+                                <img src="http://via.placeholder.com/150x150">
+                            </figure>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-2">
+                            <figure>
+                                <img src="http://via.placeholder.com/150x150">
+                            </figure>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-2">
+                            <figure>
+                                <img src="http://via.placeholder.com/150x150">
+                            </figure>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-2">
+                            <figure>
+                                <img src="http://via.placeholder.com/150x150">
+                            </figure>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-2">
+                            <figure>
+                                <img src="http://via.placeholder.com/150x150">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section><!--        BRANDS SECTION END-->
+            <!--        WORK SECTION START-->
+            <section class="work" id="work">
+                <div class="container">
+                    <div class="section-introduction text-center mx-auto">
+                        <h4 class="section-header01">What we do</h4>
+                        <h3 class="section-header02">some of our work</h3>
+                        <p class="paragraph-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+                <div class="row no-gutters align-items-stretch text-center">
+                    <div class="col-12 col-md-6">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-sm-6">
+                                <figure>
+                                    <img src="img/work-01.jpg" alt=""/>
+                                    <div class="work-hover text-center">
+                                        <div class="work-info">
+                                            <span class="fa fa-picture-o mb-2"></span>
+                                            <p class="mb-1">creatively designed</p>
+                                            <a href="#">Lorem ipsum dolor sit</a>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <figure>
+                                    <img src="img/work-02.jpg" alt=""/>
+                                    <div class="work-hover text-center">
+                                        <div class="work-info">
+                                            <span class="fa fa-picture-o mb-2"></span>
+                                            <p class="mb-1">creatively designed</p>
+                                            <a href="#">Lorem ipsum dolor sit</a>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <figure>
+                                    <img src="img/work-04.jpg" alt=""/>
+                                    <div class="work-hover text-center">
+                                        <div class="work-info">
+                                            <span class="fa fa-picture-o mb-2"></span>
+                                            <p class="mb-1">creatively designed</p>
+                                            <a href="#">Lorem ipsum dolor sit</a>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <figure>
+                                    <img src="img/work-05.jpg" alt=""/>
+                                    <div class="work-hover text-center">
+                                        <div class="work-info">
+                                            <span class="fa fa-picture-o mb-2"></span>
+                                            <p class="mb-1">creatively designed</p>
+                                            <a href="#">Lorem ipsum dolor sit</a>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-sm-6">
+                                <figure>
+                                    <img src="img/work-06.jpg" alt=""/>
+                                    <div class="work-hover text-center">
+                                        <div class="work-info">
+                                            <span class="fa fa-picture-o mb-2"></span>
+                                            <p class="mb-1">creatively designed</p>
+                                            <a href="#">Lorem ipsum dolor sit</a>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+                                        <figure>
+                                            <img src="img/work-04.jpg" alt=""/>
+                                            <div class="work-hover text-center">
+                                                <div class="work-info">
+                                                    <span class="fa fa-picture-o mb-2"></span>
+                                                    <p class="mb-1">creatively designed</p>
+                                                    <a href="#">Lorem ipsum dolor sit</a>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="col-12">
+                                        <figure>
+                                            <img src="img/work-08.jpg" alt=""/>
+                                            <div class="work-hover text-center">
+                                                <div class="work-info">
+                                                    <span class="fa fa-picture-o mb-2"></span>
+                                                    <p class="mb-1">creatively designed</p>
+                                                    <a href="#">Lorem ipsum dolor sit</a>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--        WORK SECTION END-->
+            <!--        Joshua Earle QUOTE SECTION START-->
+            <section class="joshua-quote">
+                <div class="container">
+                    <div class="section-introduction mx-auto mb-0">
+                        <div class="row just">
+                            <div class="col-12 col-md-2 mb-3 mb-md-0">
+                                <figure class="text-center">
+                                    <img src="img/testimonial.jpg" alt=""/>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <article>
+                                    <p class="quote-paragraph text-center text-md-left mb-5 mb-md-3">
+                                        “Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                        elit, sed do eiusmod tempor incididunt ut labore 
+                                        et dolore magna aliqua. Ut enim ad minim veniam, 
+                                        quis nostrud exercitation.”
+                                    </p>
+                                    <h4 class="quote-name text-center text-md-left position-relative">Joshua Earle</h4>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--        Joshua Earle QUOTE SECTION END-->
+            <!--        CLIENTS SECTION START-->
+            <section class="clients" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(img/mountain.png)">
+                <div class="container">
+                    <div class="section-introduction text-center mx-auto">
+                        <h4 class="section-header01">Happy clients</h4>
+                        <h3 class="section-header02 mb-100">what people say</h3>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-6 mb-5 clients-item">
+                            <div class="d-flex">
+                                <div class="w-25">
+                                    <figure>
+                                        <img src="img/people-01.jpg" alt="Client"/>
+                                    </figure>
+                                </div>
+                                <div class="w-75 pl-3">
+                                    <h6 class="article-header mb-1">Matthew Dix</h6>
+                                    <p class="client-job mb-4">Graphic Design</p>
+                                    <p class="paragraph-text">Lorem ipsum dolor sit amet, 
+                                        consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-5 clients-item">
+                            <div class="d-flex">
+                                <div class="w-25">
+                                    <figure>
+                                        <img src="img/people-02.jpg" alt="Client"/>
+                                    </figure>
+                                </div>
+                                <div class="w-75 pl-3">
+                                    <h6 class="article-header mb-1">Matthew Dix</h6>
+                                    <p class="client-job mb-4">Graphic Design</p>
+                                    <p class="paragraph-text">Lorem ipsum dolor sit amet, 
+                                        consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-5 mb-sm-0 clients-item">
+                            <div class="d-flex">
+                                <div class="w-25">
+                                    <figure>
+                                        <img src="img/people-03.jpg" alt="Client"/>
+                                    </figure>
+                                </div>
+                                <div class="w-75 pl-3">
+                                    <h6 class="article-header mb-1">Matthew Dix</h6>
+                                    <p class="client-job mb-4">Graphic Design</p>
+                                    <p class="paragraph-text">Lorem ipsum dolor sit amet, 
+                                        consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 clients-item">
+                            <div class="d-flex">
+                                <div class="w-25">
+                                    <figure>
+                                        <img src="img/people-04.jpg" alt="Client"/>
+                                    </figure>
+                                </div>
+                                <div class="w-75 pl-3">
+                                    <h6 class="article-header mb-1">Matthew Dix</h6>
+                                    <p class="client-job mb-4">Graphic Design</p>
+                                    <p class="paragraph-text">Lorem ipsum dolor sit amet, 
+                                        consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--        CLIENTS SECTION END-->
+            <!--        BLOG SECTION START-->
+            <section class="blog" id="blog">
+                <div class="container">
+                    <div class="section-introduction text-center mx-auto">
+                        <h4 class="section-header01">Our stories</h4>
+                        <h3 class="section-header02 mb-100">Latest blog</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-4 mb-4 mb-sm-0 px-5 px-sm-3">
                             <article>
-                                <p class="quote-paragraph text-center text-md-left mb-5 mb-md-3">
-                                    “Lorem ipsum dolor sit amet, consectetur adipiscing 
-                                    elit, sed do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad minim veniam, 
-                                    quis nostrud exercitation.”
+                                <figure>
+                                    <img src="img/blog-01.jpg" alt="Blog"/>
+                                    <div class="blogDate">
+                                        <p class="blogDay mb-0">14</p>
+                                        <p class="blogMonth mb-0">Jan</p>
+                                    </div>
+                                </figure>
+                                <h6 class="article-header">sed do eiusmod tempor</h6>
+                                <p class="paragraph-text blog-text">
+                                    Adipiscing elit, sed do eiusmod tempor incididunt 
+                                    ut labore et dolore magna aliqua.
                                 </p>
-                                <h4 class="quote-name text-center text-md-left position-relative">John Doe</h4>
+                                <hr>
+                                <span class="fa fa-eye"></span>
+                                <p class="paragraph-text d-inline-block font-italic"> 992</p>
+                                <span class="fa fa-commenting ml-3"></span>
+                                <p class="paragraph-text d-inline-block font-italic"> 42</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-4 mb-sm-0 px-5 px-sm-3">
+                            <article>
+                                <figure>
+                                    <img src="img/blog-02_1.jpg" alt="Blog"/>
+                                    <div class="blogDate">
+                                        <p class="blogDay mb-0">12</p>
+                                        <p class="blogMonth mb-0">Jan</p>
+                                    </div>
+                                </figure>
+                                <h6 class="article-header">incididunt ut labore et dolore</h6>
+                                <p class="paragraph-text blog-text">
+                                    Elit, sed do eiusmod tempor incididunt ut labore 
+                                    et dolore magna aliqua.
+                                </p>
+                                <hr>
+                                <span class="fa fa-eye"></span>
+                                <p class="paragraph-text d-inline-block font-italic"> 1560</p>
+                                <span class="fa fa-commenting ml-3"></span>
+                                <p class="paragraph-text d-inline-block font-italic"> 98</p>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-4 px-5 px-sm-3">
+                            <article>
+                                <figure>
+                                    <img src="img/blog-03.jpg" alt="Blog"/>
+                                    <div class="blogDate">
+                                        <p class="blogDay mb-0">15</p>
+                                        <p class="blogMonth mb-0">Jan</p>
+                                    </div>
+                                </figure>
+                                <h6 class="article-header">Lorem ipsum dolor sit amet</h6>
+                                <p class="paragraph-text blog-text">
+                                    Consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <hr>
+                                <span class="fa fa-eye"></span>
+                                <p class="paragraph-text d-inline-block font-italic"> 542</p>
+                                <span class="fa fa-commenting ml-3"></span>
+                                <p class="paragraph-text d-inline-block font-italic"> 17</p>
                             </article>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section><!--JOHN DOE QUOTE SECTION END-->
-        <!--    TEAM SECTION START-->
-        <section class="team">
-            <div class="container">
-                <div class="section-introduction text-center mx-auto">
-                    <h4 class="section-header01">Who we are</h4>
-                    <h3 class="section-header02">meet our team</h3>
-                    <p class="paragraph-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    </p>
+            </section><!--        BLOG SECTION END-->
+            <!--        MAP SECTION START-->
+            <section class="map-section" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(img/forest.png)">
+                <div class="container">
+                    <div class="map-link-wrap mx-auto text-center">
+                        <span class="fa fa-map-marker mb-2"></span>
+                        <a href="#">open map</a>
+                    </div>
                 </div>
-                <div class="row text-center">
-                    <div class="col-12 col-md-4 mb-4 mb-md-0">
-                        <article class="mx-auto mx-md-0">
-                            <figure class="position-relative mb-4">
-                                <img src="img/member-01.jpg" alt="Team member"/>
-                                <div class="team-hover position-absolute">
-                                    <div class="social d-flex justify-content-center">
-                                        <a href="#" class="fa fa-facebook"></a>
-                                        <a href="#" class="fa fa-twitter"></a>
-                                        <a href="#" class="fa fa-pinterest-p"></a>
-                                        <a href="#" class="fa fa-instagram"></a>
+            </section><!--        MAP SECTION END-->
+        </main>
+        <!--        FOOTER START-->
+        <footer id="contact">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-xl-5 mb-5 mb-xl-0">
+                        <article class="footer-social">
+                            <h4 class="footer-logo mb-4"><a href="#">MoGo</a></h4>
+                            <p class="footer-social-content paragraph-text mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore 
+                                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit 
+                                esse cillum dolore eu fugiat nulla pariatur. 
+                            </p>
+                            <p class="followers d-inline-block mb-0">15k</p> <p class="footer-dark-text d-inline-block mb-0">followers</p>
+                            <hr>
+                            <div class="footer-social-icons d-flex mb-4">
+                                <p class="follow-us">Follow Us </p>
+                                <ul class="d-flex list-unstyled">
+                                    <li>
+                                        <a href="#"> <span class="fa fa-facebook"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="fa fa-twitter"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="fa fa-instagram"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="fa fa-pinterest-p"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="fa fa-google-plus"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="fa fa-youtube-play"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="fa fa-dribbble"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="fa fa-tumblr"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form>
+                                <div class="input-group mb-3 row no-gutters">
+                                    <input type="text" class="pl-3 col-12 col-lg-9 mb-3 mb-lg-0 form-control-lg form-control rounded-0" placeholder="Your Email" aria-label="Enter email adress" aria-describedby="basic-addon2">
+                                    <div class="col-12 col-lg-3 input-group-append">
+                                        <button class="btn rounded-0 text-uppercase" type="button">Subscribe</button>
                                     </div>
                                 </div>
-                            </figure>
-                            <h6 class="article-header">Matthew Dix</h6>
-                            <p class="paragraph-text font-italic">Graphic Design</p>
+                            </form>
                         </article>
                     </div>
-                    <div class="col-12 col-md-4 mb-4 mb-md-0">
-                        <article class="mx-auto mx-md-0">
-                            <figure class="position-relative mb-4">
-                                <img src="img/member-02.jpg" alt="Team member"/>
-                                <div class="team-hover position-absolute">
-                                    <div class="social d-flex justify-content-center">
-                                        <a href="#" class="fa fa-facebook"></a>
-                                        <a href="#" class="fa fa-twitter"></a>
-                                        <a href="#" class="fa fa-pinterest-p"></a>
-                                        <a href="#" class="fa fa-instagram"></a>
-                                    </div>
-                                </div>
-                            </figure>
-                            <h6 class="article-header">Christopher Campbell</h6>
-                            <p class="paragraph-text font-italic">Branding/UX design</p>
-                        </article>
-                    </div>
-                    <div class="col-12 col-md-4 mb-4 mb-md-0">
-                        <article class="mx-auto mx-md-0">
-                            <figure class="position-relative mb-4">
-                                <img src="img/member-03.jpg" alt="Team member"/>
-                                <div class="team-hover position-absolute">
-                                    <div class="social d-flex justify-content-center">
-                                        <a href="#" class="fa fa-facebook"></a>
-                                        <a href="#" class="fa fa-twitter"></a>
-                                        <a href="#" class="fa fa-pinterest-p"></a>
-                                        <a href="#" class="fa fa-instagram"></a>
-                                    </div>
-                                </div>
-                            </figure>
-                            <h6 class="article-header">Michael Fertig </h6>
-                            <p class="paragraph-text font-italic">Developer</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section><!--    TEAM SECTION END-->
-        <!--        BRANDS SECTION START-->
-        <section class="brands">
-            <div class="container">
-                <div class="row text-center  justify-content-between">
-                    <div class="col-6 col-sm-4 col-md-2">
-                        <figure>
-                            <img src="http://via.placeholder.com/150x150">
-                        </figure>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-2">
-                        <figure>
-                            <img src="http://via.placeholder.com/150x150">
-                        </figure>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-2">
-                        <figure>
-                            <img src="http://via.placeholder.com/150x150">
-                        </figure>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-2">
-                        <figure>
-                            <img src="http://via.placeholder.com/150x150">
-                        </figure>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-2">
-                        <figure>
-                            <img src="http://via.placeholder.com/150x150">
-                        </figure>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-2">
-                        <figure>
-                            <img src="http://via.placeholder.com/150x150">
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section><!--        BRANDS SECTION END-->
-        <!--        WORK SECTION START-->
-        <section class="work">
-            <div class="container">
-                <div class="section-introduction text-center mx-auto">
-                    <h4 class="section-header01">What we do</h4>
-                    <h3 class="section-header02">some of our work</h3>
-                    <p class="paragraph-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    </p>
-                </div>
-            </div>
-            <div class="row no-gutters align-items-stretch text-center">
-                <div class="col-12 col-md-6">
-                    <div class="row no-gutters">
-                        <div class="col-12 col-sm-6">
-                            <figure>
-                                <img src="img/work-01.jpg" alt=""/>
-                                <div class="work-hover text-center">
-                                    <div class="work-info">
-                                        <span class="fa fa-picture-o mb-2"></span>
-                                        <p class="mb-1">creatively designed</p>
-                                        <a href="#">Lorem ipsum dolor sit</a>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <figure>
-                                <img src="img/work-02.jpg" alt=""/>
-                                <div class="work-hover text-center">
-                                    <div class="work-info">
-                                        <span class="fa fa-picture-o mb-2"></span>
-                                        <p class="mb-1">creatively designed</p>
-                                        <a href="#">Lorem ipsum dolor sit</a>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <figure>
-                                <img src="img/work-04.jpg" alt=""/>
-                                <div class="work-hover text-center">
-                                    <div class="work-info">
-                                        <span class="fa fa-picture-o mb-2"></span>
-                                        <p class="mb-1">creatively designed</p>
-                                        <a href="#">Lorem ipsum dolor sit</a>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <figure>
-                                <img src="img/work-05.jpg" alt=""/>
-                                <div class="work-hover text-center">
-                                    <div class="work-info">
-                                        <span class="fa fa-picture-o mb-2"></span>
-                                        <p class="mb-1">creatively designed</p>
-                                        <a href="#">Lorem ipsum dolor sit</a>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="row no-gutters">
-                        <div class="col-12 col-sm-6">
-                            <figure>
-                                <img src="img/work-06.jpg" alt=""/>
-                                <div class="work-hover text-center">
-                                    <div class="work-info">
-                                        <span class="fa fa-picture-o mb-2"></span>
-                                        <p class="mb-1">creatively designed</p>
-                                        <a href="#">Lorem ipsum dolor sit</a>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="row no-gutters">
-                                <div class="col-12">
-                                    <figure>
-                                        <img src="img/work-04.jpg" alt=""/>
-                                        <div class="work-hover text-center">
-                                            <div class="work-info">
-                                                <span class="fa fa-picture-o mb-2"></span>
-                                                <p class="mb-1">creatively designed</p>
-                                                <a href="#">Lorem ipsum dolor sit</a>
-                                            </div>
+                    <div class="col-12 col-xl-7">
+                        <div class="row">
+                            <div class="col-12 col-md-7 mb-5 mb-md-0">
+                                <article class="footer-blogs">
+                                    <p class="footer-dark-text text-uppercase mb-4">blogs</p>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="w-25">
+                                            <figure>
+                                                <img src="img/blog-01.jpg" alt=""/>
+                                            </figure>
                                         </div>
-                                    </figure>
-                                </div>
-                                <div class="col-12">
-                                    <figure>
-                                        <img src="img/work-08.jpg" alt=""/>
-                                        <div class="work-hover text-center">
-                                            <div class="work-info">
-                                                <span class="fa fa-picture-o mb-2"></span>
-                                                <p class="mb-1">creatively designed</p>
-                                                <a href="#">Lorem ipsum dolor sit</a>
-                                            </div>
+                                        <div class="w-75 pl-4 pr-2">
+                                            <a href="#" class="footer-dark-text text-uppercase mb-1">
+                                                Lorem ipsum dolor sit amet, 
+                                                consectetur adipiscing
+                                            </a>
+                                            <p class="footer-light-text">Jan 9, 2016</p>
                                         </div>
-                                    </figure>
-                                </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="w-25">
+                                            <figure>
+                                                <img src="img/blog-02.jpg" alt=""/>
+                                            </figure>
+                                        </div>
+                                        <div class="w-75 pl-4 pr-2">
+                                            <a href="#" class="footer-dark-text text-uppercase mb-1">
+                                                Consectetur adipiscing elit, 
+                                                sed do eiusmod tempor
+                                            </a>
+                                            <p class="footer-light-text">Jan 9, 2016</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="w-25">
+                                            <figure>
+                                                <img src="img/blog-03.jpg" alt=""/>
+                                            </figure>
+                                        </div>
+                                        <div class="w-75 pl-4 pr-2">
+                                            <a href="#" class="footer-dark-text text-uppercase mb-1">
+                                                sed do eiusmod tempor 
+                                                incididunt ut labore
+                                            </a>
+                                            <p class="footer-light-text">Jan 9, 2016</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <article class="footer-instagram">
+                                    <p class="footer-dark-text text-uppercase mb-4">instagram</p>
+                                    <div class="row no-gutters insta-pics-wrap mb-3">
+                                        <div class="col-4">
+                                            <figure>
+                                                <a href="#">
+                                                    <img src="img/ins-01.jpg" alt=""/>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <div class="col-4">
+                                            <figure>
+                                                <a href="#">
+                                                    <img src="img/ins-02.jpg" alt=""/>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <div class="col-4">
+                                            <figure>
+                                                <a href="#">
+                                                    <img src="img/ins-03.jpg" alt=""/>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <div class="col-4">
+                                            <figure>
+                                                <a href="#">
+                                                    <img src="img/ins-04.jpg" alt=""/>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <div class="col-4">
+                                            <figure>
+                                                <a href="#">
+                                                    <img src="img/ins-05.jpg" alt=""/>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <div class="col-4">
+                                            <figure>
+                                                <a href="#">
+                                                    <img src="img/ins-06.jpg" alt=""/>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <div class="col-4">
+                                            <figure>
+                                                <a href="#">
+                                                    <img src="img/ins-07.jpg" alt=""/>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <div class="col-4">
+                                            <figure>
+                                                <a href="#">
+                                                    <img src="img/ins-08.jpg" alt=""/>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                        <div class="col-4">
+                                            <figure>
+                                                <a href="#">
+                                                    <img src="img/ins-09.jpg" alt=""/>
+                                                </a>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="view-more-photos">View more photos</a>
+                                </article>
                             </div>
                         </div>
                     </div>
+                </div>
+                <hr>
+                <div class="copyright text-center">
+                    <p class="copy-text d-inline-block">&copy; 2016 MoGo free PSD template by</p> <a href="#">Laaqiq</a>
                 </div>
             </div>
-        </section><!--        WORK SECTION END-->
-        <!--        Joshua Earle QUOTE SECTION START-->
-        <section class="joshua-quote">
-            <div class="container">
-                <div class="section-introduction mx-auto mb-0">
-                    <div class="row just">
-                        <div class="col-12 col-md-2 mb-3 mb-md-0">
-                            <figure class="text-center">
-                                <img src="img/testimonial.jpg" alt=""/>
-                            </figure>
-                        </div>
-                        <div class="col-12 col-md-10">
-                            <article>
-                                <p class="quote-paragraph text-center text-md-left mb-5 mb-md-3">
-                                    “Lorem ipsum dolor sit amet, consectetur adipiscing 
-                                    elit, sed do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad minim veniam, 
-                                    quis nostrud exercitation.”
-                                </p>
-                                <h4 class="quote-name text-center text-md-left position-relative">Joshua Earle</h4>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!--        Joshua Earle QUOTE SECTION END-->
-        <!--        CLIENTS SECTION START-->
-        <section class="clients" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(img/mountain.png)">
-            <div class="container">
-                <div class="section-introduction text-center mx-auto">
-                    <h4 class="section-header01">Happy clients</h4>
-                    <h3 class="section-header02 mb-100">what people say</h3>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-6 mb-5 clients-item">
-                        <div class="d-flex">
-                            <div class="w-25">
-                                <figure>
-                                    <img src="img/people-01.jpg" alt="Client"/>
-                                </figure>
-                            </div>
-                            <div class="w-75 pl-3">
-                                <h6 class="article-header mb-1">Matthew Dix</h6>
-                                <p class="client-job mb-4">Graphic Design</p>
-                                <p class="paragraph-text">Lorem ipsum dolor sit amet, 
-                                    consectetur adipiscing elit, sed do eiusmod tempor 
-                                    incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 mb-5 clients-item">
-                        <div class="d-flex">
-                            <div class="w-25">
-                                <figure>
-                                    <img src="img/people-02.jpg" alt="Client"/>
-                                </figure>
-                            </div>
-                            <div class="w-75 pl-3">
-                                <h6 class="article-header mb-1">Matthew Dix</h6>
-                                <p class="client-job mb-4">Graphic Design</p>
-                                <p class="paragraph-text">Lorem ipsum dolor sit amet, 
-                                    consectetur adipiscing elit, sed do eiusmod tempor 
-                                    incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 mb-5 mb-sm-0 clients-item">
-                        <div class="d-flex">
-                            <div class="w-25">
-                                <figure>
-                                    <img src="img/people-03.jpg" alt="Client"/>
-                                </figure>
-                            </div>
-                            <div class="w-75 pl-3">
-                                <h6 class="article-header mb-1">Matthew Dix</h6>
-                                <p class="client-job mb-4">Graphic Design</p>
-                                <p class="paragraph-text">Lorem ipsum dolor sit amet, 
-                                    consectetur adipiscing elit, sed do eiusmod tempor 
-                                    incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 clients-item">
-                        <div class="d-flex">
-                            <div class="w-25">
-                                <figure>
-                                    <img src="img/people-04.jpg" alt="Client"/>
-                                </figure>
-                            </div>
-                            <div class="w-75 pl-3">
-                                <h6 class="article-header mb-1">Matthew Dix</h6>
-                                <p class="client-job mb-4">Graphic Design</p>
-                                <p class="paragraph-text">Lorem ipsum dolor sit amet, 
-                                    consectetur adipiscing elit, sed do eiusmod tempor 
-                                    incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!--        CLIENTS SECTION END-->
-        <!--        BLOG SECTION START-->
-        <section class="blog">
-            <div class="container">
-                <div class="section-introduction text-center mx-auto">
-                    <h4 class="section-header01">Our stories</h4>
-                    <h3 class="section-header02 mb-100">Latest blog</h3>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-4 mb-4 mb-sm-0 px-5 px-sm-3">
-                        <article>
-                            <figure>
-                                <img src="img/blog-01.jpg" alt="Blog"/>
-                                <div class="blogDate">
-                                    <p class="blogDay mb-0">14</p>
-                                    <p class="blogMonth mb-0">Jan</p>
-                                </div>
-                            </figure>
-                            <h6 class="article-header">sed do eiusmod tempor</h6>
-                            <p class="paragraph-text blog-text">
-                                Adipiscing elit, sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua.
-                            </p>
-                            <hr>
-                            <span class="fa fa-eye"></span>
-                            <p class="paragraph-text d-inline-block font-italic"> 992</p>
-                            <span class="fa fa-commenting ml-3"></span>
-                            <p class="paragraph-text d-inline-block font-italic"> 42</p>
-                        </article>
-                    </div>
-                    <div class="col-12 col-sm-4 mb-4 mb-sm-0 px-5 px-sm-3">
-                        <article>
-                            <figure>
-                                <img src="img/blog-02_1.jpg" alt="Blog"/>
-                                <div class="blogDate">
-                                    <p class="blogDay mb-0">12</p>
-                                    <p class="blogMonth mb-0">Jan</p>
-                                </div>
-                            </figure>
-                            <h6 class="article-header">incididunt ut labore et dolore</h6>
-                            <p class="paragraph-text blog-text">
-                                Elit, sed do eiusmod tempor incididunt ut labore 
-                                et dolore magna aliqua.
-                            </p>
-                            <hr>
-                            <span class="fa fa-eye"></span>
-                            <p class="paragraph-text d-inline-block font-italic"> 1560</p>
-                            <span class="fa fa-commenting ml-3"></span>
-                            <p class="paragraph-text d-inline-block font-italic"> 98</p>
-                        </article>
-                    </div>
-                    <div class="col-12 col-sm-4 px-5 px-sm-3">
-                        <article>
-                            <figure>
-                                <img src="img/blog-03.jpg" alt="Blog"/>
-                                <div class="blogDate">
-                                    <p class="blogDay mb-0">15</p>
-                                    <p class="blogMonth mb-0">Jan</p>
-                                </div>
-                            </figure>
-                            <h6 class="article-header">Lorem ipsum dolor sit amet</h6>
-                            <p class="paragraph-text blog-text">
-                                Consectetur adipiscing elit, sed do eiusmod tempor 
-                                incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <hr>
-                            <span class="fa fa-eye"></span>
-                            <p class="paragraph-text d-inline-block font-italic"> 542</p>
-                            <span class="fa fa-commenting ml-3"></span>
-                            <p class="paragraph-text d-inline-block font-italic"> 17</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section><!--        BLOG SECTION END-->
-        <!--        MAP SECTION START-->
-        <section class="map-section" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(img/forest.png)">
-            <div class="container">
-                <div class="map-link-wrap mx-auto text-center">
-                    <span class="fa fa-map-marker mb-2"></span>
-                    <a href="#">open map</a>
-                </div>
-            </div>
-        </section><!--        MAP SECTION END-->
+        </footer>
 
 
 

@@ -2,33 +2,34 @@
 
 
 @media(min-width:576px){
-    
-    .menu-bg {
-    top: 4px;
-    right: 20px;
-    position: absolute;
-}
 
     .services-item:nth-child(n+5) {
-    border-bottom: none !important;
-}
-.phone {
-    bottom: -40px;
-    right: -80px;
-}
-.team article .fa {
-    color: #F38181;
-    height: 50px;
-    width: 50px;
-    background: #FCE38A;
-    font-size: 20px;
-    line-height: 50px;
-    transition: 0.3s linear;
-}
+        border-bottom: none !important;
+    }
+    .phone {
+        bottom: -40px;
+        right: -80px;
+    }
+    .team article .fa {
+        height: 50px;
+        width: 50px;
+        font-size: 20px;
+        line-height: 50px;
+         }
 }
 
 
 @media(min-width:768px){
+
+    .navbar-nav li {
+        margin-left: 35px;
+    }
+    .navbar .header-icons .fa {
+        margin-left: 25px;
+    }
+    .navbar-nav li {
+    border-bottom: none;
+}
 
     .lead {
         padding-top: 150px;
@@ -51,6 +52,7 @@
         vertical-align: middle;
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
+        -moz-transform: perspective(1px) translateZ(0);
         box-shadow: 0 0 0px rgba(0, 0, 0, 0);
         position: relative;
         overflow: hidden;
@@ -79,22 +81,23 @@
         display: block;
     }
     .services {
-    padding: 100px 0;
-}
-.design-content {
-    max-width: 40%;
-}
-.quote-name {
-    margin-left: 80px;
-    position: relative;
-}
-.quote-name::before {
-    top: 50%;
-    left: -45px;
-}
-.team article {
-    max-width: 100%;
-}
+        padding: 100px 0;
+    }
+    .design-content {
+        max-width: 40%;
+    }
+    .quote-name {
+        margin-left: 80px;
+        position: relative;
+    }
+    .quote-name::before {
+        top: 50%;
+        left: -45px;
+    }
+    .team article {
+        max-width: 100%;
+    }
+    
 
 }
 
@@ -106,18 +109,18 @@
         max-width: 960px;
     }
     .services-item:nth-child(n+4) {
-    border-bottom: none !important;
-}
-.phone {
-    bottom: -40px;
-    right: -100px;
-}
-.team article .fa {
-    height: 56px;
-    width: 56px;
-    font-size: 25px;
-    line-height: 56px;
-}
+        border-bottom: none !important;
+    }
+    .phone {
+        bottom: -40px;
+        right: -100px;
+    }
+    .team article .fa {
+        height: 56px;
+        width: 56px;
+        font-size: 25px;
+        line-height: 56px;
+    }
 
 
 }
@@ -136,8 +139,8 @@
         max-width: 1212px !important;
     }
     .phone {
-    bottom: -50px;
-    right: -130px;
-}
+        bottom: -50px;
+        right: -130px;
+    }
 }
 

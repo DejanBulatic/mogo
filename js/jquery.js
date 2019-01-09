@@ -3,10 +3,10 @@
 
 $(window).on('scroll', function() {
 			if($(window).scrollTop()) {
-				$('header').addClass('custom-nav-scrol');
+				$('header').addClass('custom-head-scrol');
 			}
 			else {
-				$('header').removeClass('custom-nav-scrol');
+				$('header').removeClass('custom-head-scrol');
 			}
 		})
 	
