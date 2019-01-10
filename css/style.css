@@ -183,7 +183,7 @@ button:focus {
 
 /*HEADER END*/
 /*LEAD SECTION START*/
-.lead {
+.lead-section {
     padding-top: 130px;
     background-size: cover;
     background-position: center;
@@ -366,16 +366,15 @@ a:hover svg rect {
 /*ABOUT US END*/
 /*NUMBERS START*/
 .numbers {
-    display: none;
     background-color: #95E1D3;
 }
 .numbers-item {
     padding: 60px 0px;
-    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     min-width: 130px;
 }
 .numbers-item:last-of-type {
-    border-right: 1px solid #fff;
+    border-bottom: none;
 }
 .numbers-number {
     font-size: 72px;
@@ -388,7 +387,9 @@ a:hover svg rect {
 }
 /*NUMBERS END*/
 /*SERVICES START*/
-
+.services {
+    padding: 100px 0;
+}
 .services-item {
     border-bottom: 1px solid #E5E5E5;
 }
@@ -436,6 +437,13 @@ a:hover svg rect {
     background: #F8F8F8;
     padding: 70px 0;
 }
+.quote-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #999999;
+    font-weight: 300;
+    font-style: italic;
+}
 
 /*JOHN DOE QUOTE SECTION END*/
 /*TEAM START*/
@@ -446,7 +454,7 @@ a:hover svg rect {
     background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
     top: 0;
     left: 0;
-    width: 101%;
+    width: 100%;
     height: 100%;
     opacity: 0;
     transition: 0.2s linear;
@@ -532,8 +540,7 @@ a:hover svg rect {
     font-size: 14px;
     text-transform: uppercase;
 }
-.work .work-hover a {
-    text-decoration: none;
+.work .work-hover .studio {
     color: #fff;
     font-style: italic;
     font-weight: 300;
@@ -603,6 +610,7 @@ a:hover svg rect {
 .blog figure {
     position: relative;
 }
+
 .blog .blogDate {
     position: absolute;
     left: -5%;
@@ -610,6 +618,11 @@ a:hover svg rect {
     background: #95E1D3;
     padding: 10px;
     text-align: center;
+    transition: 0.35s ease-out;
+}
+.blog figure:hover  .blogDate {
+    margin-bottom: 7px;
+    background: #9cedde;
 }
 .blog .blogDay {
     color: #fff;
@@ -626,9 +639,24 @@ a:hover svg rect {
 .blog .fa {
     color: #95E1D3;
 }
+.blog a {
+    text-decoration: none;
+    color: #999999;
+    transition: 0.15s linear;
+}
+.blog a:hover {
+    color: #bcbcbc;
+}
+.blog-header {
+    transition: 0.15s linear;
+}
+.blog-header:hover {
+    color: #bcbcbc;
+}
 .blog .blog-text {
+    text-decoration: none;
     line-height: 1.5rem;
-    height: 45px;
+    height: 3rem;
     overflow: hidden;
 }
 /*BLOG END*/
@@ -703,6 +731,13 @@ footer .footer-social a{
 }
 footer .footer-social .fa {
     color: #95E1D3;
+    -webkit-transform: rotate(0deg);
+    -webkit-transition: -webkit-transform 0.25s ease-in-out;
+}
+footer .footer-social .fa:hover {
+    -webkit-transform: rotate(360deg);
+    -webkit-transition: -webkit-transform 0.25s ease-in-out;
+    color: #7dc4b6;
 }
 footer .form-control {
     background: #fff;
@@ -737,13 +772,16 @@ footer .footer-social form .btn {
 .input-group {
     max-width: 380px;
 }
+footer button:hover {
+    background: #7dc4b6 !important;
+}
 .footer-blogs a {
     text-decoration: none;
     color: #333333;
-    transition: 0.1s linear;
+    transition: 0.15s linear;
 }
 .footer-blogs a:hover {
-    color: #545454;
+    color: #969696;
 }
 .insta-pics-wrap {
     max-width: 264px;
