@@ -99,6 +99,7 @@ img {
 .mb-100 {
     margin-bottom: 100px !important;
 }
+
 /*GLOBAL END*/
 /*HEADER START*/
 header {
@@ -110,7 +111,7 @@ header {
     margin: 0 auto;
 }
 .custom-head-scrol {
-    background: rgba(149, 225, 211, 0.9);
+    background: rgb(149, 225, 211);
     box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
     padding-top: 0px;
 }
@@ -188,6 +189,7 @@ button:focus {
     background-size: cover;
     background-position: center;
     padding-bottom: 0px;
+    height: 100vh;
 }
 .lead-content {
     max-width: 500px;
@@ -474,6 +476,7 @@ a:hover svg rect {
 }
 .team img {
     width: 100%;
+    display: block !important;
 }
 .team article .social {
     position: relative;
@@ -779,6 +782,7 @@ footer button:hover {
     text-decoration: none;
     color: #333333;
     transition: 0.15s linear;
+    display: block;
 }
 .footer-blogs a:hover {
     color: #969696;
