@@ -2,18 +2,20 @@
 
 
 @media(min-width:576px){
-    
+
+
+
     .numbers-item {
-    border-left: 1px solid #fff;
-    border-bottom: none;
-}
-    
+        border-left: 1px solid #fff;
+        border-bottom: none;
+    }
+
     .numbers-item:last-of-type {
-    border-right: 1px solid #fff;
-}
-.numbers-item:nth-child(3) {
-    border-right: 1px solid #fff;
-}
+        border-right: 1px solid #fff;
+    }
+    .numbers-item:nth-child(3) {
+        border-right: 1px solid #fff;
+    }
 
 
     .services-item:nth-child(n+5) {
@@ -28,12 +30,12 @@
         width: 50px;
         font-size: 20px;
         line-height: 50px;
-         }
-          .quote-name {
+    }
+    .quote-name {
         margin-left: 80px;
         position: relative;
     }
-         .quote-name::before {
+    .quote-name::before {
         top: 50%;
         left: -45px;
     }
@@ -44,16 +46,23 @@
 
     .navbar-nav li {
         margin-left: 35px;
+        border-bottom: none;
     }
-    .navbar .header-icons .fa {
-        margin-left: 25px;
+    .nav-link {
+        color: #fff;
     }
-    .navbar-nav li {
-    border-bottom: none;
-}
 
-    .lead {
-        padding-top: 150px;
+
+    .lead-section {
+        padding-top: 100px;
+    }
+
+    .lead-content {
+        margin-bottom: 80px;
+    }
+
+    .prog-text {
+        font-size: 20px;
     }
 
     .creative-template {
@@ -85,7 +94,7 @@
         left: 51%;
         right: 51%;
         bottom: 0;
-        background: #FCE38A;
+        background: #E81E61;
         height: 2px;
         -webkit-transition-property: left, right;
         transition-property: left, right;
@@ -104,12 +113,12 @@
     .design-content {
         max-width: 40%;
     }
-   
-    
+
+
     .team article {
         max-width: 100%;
     }
-    
+
 
 }
 
@@ -120,10 +129,10 @@
     .header-container {
         max-width: 960px;
     }
-    
+
     .numbers-item:nth-child(3) {
-    border-right: none;
-}
+        border-right: none;
+    }
     .services-item:nth-child(n+4) {
         border-bottom: none !important;
     }
@@ -138,10 +147,12 @@
         line-height: 56px;
     }
 
-.quote-paragraph {
-    font-size: 1.5rem;
+    .quote-paragraph {
+        font-size: 1.5rem;
+    }
 }
-}
+
+
 
 
 
@@ -156,9 +167,16 @@
     .container {
         max-width: 1212px !important;
     }
+
     .phone {
         bottom: -50px;
         right: -130px;
     }
 }
 
+@media(min-width:1450px){
+
+    .lead-content {
+        margin-bottom: 140px;
+    }
+}

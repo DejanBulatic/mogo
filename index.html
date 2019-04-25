@@ -23,15 +23,16 @@
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
         <link href="css/animate.css" rel="stylesheet" type="text/css"/>
+        <link href="css/animation.css" rel="stylesheet" type="text/css"/>
         <title>Welcome to Mogo</title>
     </head>
-    <body>
+    <body id="home">
         <!--HEADER START-->
         <header class="fixed-top" id="custom-top-header">
             <div class="header-container">
                 <!--NAVIGATION BAR START-->
-                <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand text-white" href="#">MoGo</a>
+                <nav class="navbar navbar-expand-md">
+                    <a class="navbar-brand" href="#">MoGo</a>
                     <button id="headMenu" onclick="onclickMenu()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                         <span id="bar1" class="bar"></span>
                         <span id="bar2" class="bar"></span>
@@ -40,6 +41,9 @@
 
                     <div class="collapse navbar-collapse mx-4 mt-2 pb-2 pb-md-0" id="main-menu">
                         <ul class="navbar-nav ml-auto mb-2 mb-md-0 text-uppercase text-center text-md-right">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#home"><span class="fa fa-home"></span><span class="sr-only">(current)</span></a>
+                            </li>
                             <li class="nav-item active">
                                 <a class="nav-link hvr-underline-from-center px-0 custom-active" href="#about">about<span class="sr-only">(current)</span></a>
                             </li>
@@ -56,10 +60,6 @@
                                 <a class="nav-link hvr-underline-from-center px-0" href="#contact">contact</a>
                             </li>
                         </ul>
-                        <div class="d-flex header-icons justify-content-center pt-2 pt-md-0">
-                            <a href="#" class="fa fa-shopping-cart"></a>
-                            <a href="#" class="fa fa-search"></a>
-                        </div>
                     </div>
                 </nav>
                 <!--NAVIGATION BAR END-->
@@ -67,49 +67,58 @@
         </header><!--HEADER END-->
         <main>
             <!--LEAD SECTION START-->
-            <section class="lead-section text-center text-white" id="lead-section" style="background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url(img/eagle.png)">
+            <section class="lead-section text-center text-white" id="lead-section">
+                <div class="video-wrapper">
+                    <video autoplay="" loop="" preload="" muted="">
+                        <source src="video/people-walking.mp4" type="video/mp4">
+                        Your browser does not support the <code>video</code> tag.
+                    </video>
+                </div>
+                <div class="video-overlay"></div>
                 <div class="container">
                     <div class="lead-content mx-auto text-center">
                         <h2 class="creative-template mb-4">Creative Template</h2>
                         <h1 class="lead-text text-uppercase mb-5">welcome to&nbsp;mogo</h1>
                         <div class="lead-line bg-white mx-auto mb-5"></div>
-                        <a href="#" class="learn-more text-uppercase text-white">learn more</a>
+                        <a href="#" class="learn-more text-uppercase">learn more</a>
                     </div>
                     <div class="row px-5">
-                        <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-lg-0">
-                            <article>
-                                <div class="progress-line01 position-relative mb-2">
-                                    <div class="red-line01 position-absolute"></div>
-                                </div>
-                                <p class="prog-text text-uppercase text-left"><span class="prog-text-nr">01</span> intro</p>
-                            </article>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-lg-0">
-                            <article>
-                                <div class="progress-line02 position-relative mb-2">
-                                    <div class="red-line02 position-absolute"></div>
-                                </div>
-                                <p class="prog-text text-uppercase text-left"><span class="prog-text-nr">02</span> work</p>
-                            </article>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-lg-0">
-                            <article>
-                                <div class="progress-line03 position-relative mb-2">
-                                    <div class="red-line03 position-absolute"></div>
-                                </div>
-                                <p class="prog-text text-uppercase text-left"><span class="prog-text-nr">03</span> about</p>
-                            </article>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-lg-0">
-                            <article>
-                                <div class="progress-line04 position-relative mb-0">
-                                    <div class="red-line04 position-absolute"></div>
-                                </div>
-                                <p class="prog-text text-uppercase text-left"><span class="prog-text-nr">04</span> contact</p>
-                            </article>
+                        
+                            <div class="col-6 col-md-3 col-lg-3 pb-3 pb-lg-0">
+                                <article>
+                                    <div class="progress-line position-relative mb-2">
+                                        <div class="red-line01 position-absolute"></div>
+                                    </div>
+                                    <p class="prog-text text-uppercase text-left"><span class="prog-text-nr">01</span> intro</p>
+                                </article>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-3 pb-3 pb-lg-0">
+                                <article>
+                                    <div class="progress-line position-relative mb-2">
+                                        <div class="red-line02 position-absolute"></div>
+                                    </div>
+                                    <p class="prog-text text-uppercase text-left"><span class="prog-text-nr">02</span> work</p>
+                                </article>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-3 pb-3 pb-lg-0">
+                                <article>
+                                    <div class="progress-line position-relative mb-2">
+                                        <div class="red-line03 position-absolute"></div>
+                                    </div>
+                                    <p class="prog-text text-uppercase text-left"><span class="prog-text-nr">03</span> about</p>
+                                </article>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-3 pb-3 pb-lg-0">
+                                <article>
+                                    <div class="progress-line position-relative mb-2">
+                                        <div class="red-line04 position-absolute"></div>
+                                    </div>
+                                    <p class="prog-text text-uppercase text-left"><span class="prog-text-nr">04</span> contact</p>
+                                </article>
+                            </div>
                         </div>
                     </div>
-                </div>
+                
             </section>
             <!--LEAD SECTION END-->
             <!--ABOUT US SECTION START-->
@@ -168,31 +177,31 @@
                     <div class="row justify-content-center">
                         <div class="col-12 col-sm-4 col-lg numbers-item text-center">
                             <article class="">
-                                <p class="numbers-number text-white">42</p>
+                                <p class="numbers-number text-white counter">42</p>
                                 <p class="numbers-text text-white">Web Design Projects</p>
                             </article>
                         </div>
                         <div class="col-12 col-sm-4 col-lg numbers-item text-center">
                             <article>
-                                <p class="numbers-number text-white">123</p>
+                                <p class="numbers-number text-white counter">123</p>
                                 <p class="numbers-text text-white">happy client</p>
                             </article>
                         </div>
                         <div class="col-12 col-sm-4 col-lg numbers-item text-center">
                             <article>
-                                <p class="numbers-number text-white">15</p>
+                                <p class="numbers-number text-white counter">15</p>
                                 <p class="numbers-text text-white">award winner</p>
                             </article>
                         </div>
                         <div class="col-12 col-sm-4 col-lg numbers-item text-center">
                             <article>
-                                <p class="numbers-number text-white">99</p>
+                                <p class="numbers-number text-white counter">99</p>
                                 <p class="numbers-text text-white">cup of coffee</p>
                             </article>
                         </div>
                         <div class="col-12 col-sm-4 col-lg numbers-item text-center">
                             <article>
-                                <p class="numbers-number text-white">24</p>
+                                <p class="numbers-number text-white counter">24</p>
                                 <p class="numbers-text text-white">members</p>
                             </article>
                         </div>
@@ -1058,6 +1067,11 @@
         <script src="js/jquery.js" type="text/javascript"></script>
         <script src="js/popper.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+        <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+        <script src="js/jquery.counterup.min.js" type="text/javascript"></script>
+
+
         <script src="js/custom.js" type="text/javascript"></script>
 
 

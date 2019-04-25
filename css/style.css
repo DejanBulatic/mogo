@@ -22,7 +22,7 @@ img {
 .section-header01 {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
-    color: #333333;
+    color: #FE3366;
 }
 .section-header02 {
     text-transform: uppercase;
@@ -36,7 +36,7 @@ img {
     content: '';
     height: 3px;
     width: 60px;
-    background-color: #F38181; 
+    background-color: #FF3366; 
     position: absolute;
     bottom: -40px;
     left: 50%;
@@ -106,23 +106,55 @@ header {
     padding-top: 5px;
     transition: 0.3s linear;
 }
+.video-wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.video-wrapper video {
+    min-width: 100%;
+    min-height: 100%;
+/*    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;*/
+    z-index: 1
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
 .header-container {
     width: 90%;
     margin: 0 auto;
 }
 .custom-head-scrol {
-    background: rgb(149, 225, 211);
+    background: #fff;
     box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
     padding-top: 0px;
 }
 .headerbg {
-    background: #95E1D3;
+    background: #fff;
     box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
     padding-top: 0px;
 }
 .navbar .navbar-brand {
     font-size: 30px;
     font-weight: bold;
+    color: #FE3366;
+    transition: 0.2s linear;
+}
+.navbar .navbar-brand:hover {
+    color: #E81E61 !important;
 }
 /*CUSTOM TOGGLER START*/
 .navbar-toggler .bar {
@@ -136,6 +168,7 @@ header {
     -moz-border-radius: 3px;
     transition: 0.3s ease;
 }
+
 #bar1 {
     transform: translate(0, -4px);
 }
@@ -144,9 +177,20 @@ header {
 }
 .change #bar1 {
     transform: translate(0, 4px) rotateZ(-45deg);
+    background-color: #FF3366;
 }
 .change #bar3 {
     transform: translate(0, -2px) rotate(45deg);
+    background-color: #FF3366;
+}
+.change-color #bar1 {
+    background-color: #FF3366;
+}
+.change-color #bar2 {
+    background-color: #FF3366;
+}
+.change-color #bar3 {
+    background-color: #FF3366;
 }
 .change #bar2 {
     opacity: 0;
@@ -161,25 +205,34 @@ button:focus {
 /*CUSTOM TOGGLER END*/
 
 .navbar-nav li {
-    border-bottom: 1px solid #81d1c2;
+    border-bottom: 1px solid #d3d3d3;
 }
-.navbar-nav li a {
-    color: #fff !important;
-    transition: 0.3s linear;
+.navbar-nav li:last-child {
+    border-bottom: none;
+}
+.nav-link {
+    color: #000;
+    transition: 0.2s linear;
+}
+.nav-link-scroll {
+    color: #000 !important;
+}
+.navbar-nav li .fa {
+    color: #FF3366;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.navbar-nav li .fa:hover {
+    color: #E81E61;
 }
 
 .navbar-nav li a:hover {
-    color: #FCE38A !important;
+    color: #E81E61 !important;
+    
 }
 
-.navbar .header-icons .fa {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s ease;
-    margin: 0 10px;
-}
 .custom-active {
-    color: #FCE38A !important;
+    color: #E81E61 !important;
 }
 
 /*HEADER END*/
@@ -192,11 +245,14 @@ button:focus {
     height: 100vh;
 }
 .lead-content {
+    position: relative;
+    z-index: 5;
     max-width: 500px;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
 }
 .creative-template {
     font-family: 'Kaushan Script', cursive;
+    color: #FF3366;
     letter-spacing: 1px;
 }
 .lead-text {
@@ -204,113 +260,66 @@ button:focus {
     font-weight: bold;
     line-height: 55px;
 }
+
 .lead-line {
     height: 2px;
     width: 60px;
 }
 a.learn-more {
+    background: #FF3366;
     text-decoration: none;
     color: #fff;
     font-size: 14px;
-    border: 1.5px solid #fff;
+    border: 1.5px solid #FF3366;
+    border-radius: 20px;
     padding: 8px 30px;
+    transition: 0.2s linear;
 }
-/****  BUTTON EFFECT START  ****/
-/*a.learn-more {
-    width: 180px;
-    height: 40px;
-    line-height: 40px;
-    padding: 8px 30px;
-    text-decoration: none;
-    position: relative;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-}
-a svg,
-a svg rect {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    fill: transparent;
-    -moz-fill: transparent;
+a.learn-more:hover {
+    background: #E81E61;
+    border-color: #E81E61;
 }
 
-a svg rect {
-    stroke: #fff;
-    -webkit-stroke: #fff;
-    stroke-width: 3px;
-    -webkit-stroke-width: 3px;
-    transition: 1s;
-    stroke-dasharray: 500,500;
-    -webkit-stroke-dasharray: 500,500;
-    stroke-dashoffset: 0;
-    -webkit-stroke-dashoffset: 0;
-    
-}
-
-a:hover svg rect {
-    stroke-dashoffset: 282;
-    -webkit-stroke-dashoffset: 282;
-    stroke-dasharray: 100, 400;
-    -webkit-stroke-dasharray: 100, 400;
-    stroke: #fff;
-    -webkit-stroke: #fff;
-}*/
-/****  BUTTON EFFECT END  ****/
 /****   PROGRESS LINES START  ****/
-.progress-line01 {
+
+.progress-line {
     background-color: #fff;
     height: 2px;
     width: 100%;
+    z-index: 7;
 }
 .red-line01 {
     width: 25%;
     height: 100%;
     left: 0;
     top: 0;
-    background-color: red;
+    background-color: #FE3366;
 }
-.progress-line02 {
-    background-color: #fff;
-    height: 2px;
-    width: 100%;
-}
+
 .red-line02 {
-    width: 0%;
+    width: 50%;
     height: 100%;
     left: 0;
     top: 0;
-    background-color: red;
-}
-.progress-line03 {
-    background-color: #fff;
-    height: 2px;
-    width: 100%;
+    background-color: #FE3366;
 }
 .red-line03 {
-    width: 0%;
+    width: 10%;
     height: 100%;
     left: 0;
     top: 0;
-    background-color: red;
-}
-.progress-line04 {
-    background-color: #fff;
-    height: 2px;
-    width: 100%;
+    background-color: #FE3366;
 }
 .red-line04 {
-    width: 0%;
+    width: 20%;
     height: 100%;
     left: 0;
     top: 0;
-    background-color: red;
+    background-color: #FE3366;
 }
 .prog-text {
-    font-size: 20px;
+    font-size: 12px;
+    z-index: 9;
 }
 .prog-text-nr {
     font-size: 24px;
@@ -330,7 +339,7 @@ a:hover svg rect {
     display: block;
 }
 .about-hover {
-    background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+    background: linear-gradient(to bottom, rgba(149, 225, 211, 0.7), rgba(254, 51, 102, 0.5));
     top: 0;
     left: 0;
     width: 100%;
@@ -355,6 +364,7 @@ a:hover svg rect {
     font-size: 25px;
 }
 .about-us figure {
+    display: inline-block;
     margin-bottom: 0 !important;
     transition: 0.3s linear;
 }
@@ -363,7 +373,7 @@ a:hover svg rect {
     display: block;
 }
 .about-us figure:hover {
-    box-shadow: 5px 5px 10px #95E1D3;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 /*ABOUT US END*/
 /*NUMBERS START*/
@@ -397,7 +407,7 @@ a:hover svg rect {
 }
 .services .fa {
     font-size: 35px;
-    color: #95E1D3;
+    color: #FE3366;
 }
 /*SERVICES END*/
 /*DESIGN START*/
@@ -424,7 +434,7 @@ a:hover svg rect {
     padding: 100px 0;
 }
 .whatwedo  button .fa {
-    color: #95E1D3;
+    color: #FE3366;
 }
 .whatwedo h5 button {
     color: #333333 !important;
@@ -453,7 +463,7 @@ a:hover svg rect {
     padding: 100px 0;
 }
 .team-hover {
-    background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+    background: linear-gradient(to bottom, rgba(149, 225, 211, 0.7), rgba(254, 51, 102, 0.5));
     top: 0;
     left: 0;
     width: 100%;
@@ -465,10 +475,10 @@ a:hover svg rect {
     opacity: 100;
 }
 .team figure {
-    transition: 0.3s linear;
+    transition: 0.2s linear;
 }
 .team figure:hover{
-    box-shadow: 5px 5px 10px #95E1D3;
+    transform: rotate(0.5deg);
 }
 .team h6 {
     color: #333333;
@@ -519,7 +529,7 @@ a:hover svg rect {
     position: relative;
 }
 .work .work-hover {
-    background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+    background: linear-gradient(to bottom, rgba(149, 225, 211, 0.7), rgba(254, 51, 102, 0.5));
     position: absolute;
     top: 0;
     left: 0;
@@ -535,7 +545,7 @@ a:hover svg rect {
 }
 .work .work-hover .fa {
     color: #fff;
-    font-size: 20px;
+    font-size: 40px;
 }
 .work .work-hover p {
     font-family: 'Roboto', sans-serif;
