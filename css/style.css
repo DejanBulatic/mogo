@@ -12,6 +12,9 @@ html {
     font-family: 'Montserrat', sans-serif !important;
     scroll-behavior: smooth;
 }
+body {
+    position: relative;
+}
 img {
     max-width: 100%;
 }
@@ -218,22 +221,17 @@ button:focus {
     color: #000 !important;
 }
 .navbar-nav li .fa {
-    color: #FF3366;
     text-decoration: none;
     transition: 0.2s ease;
 }
 .navbar-nav li .fa:hover {
     color: #E81E61;
 }
-
+.navbar-nav li a.active,
 .navbar-nav li a:hover {
     color: #E81E61 !important;
-    
 }
 
-.custom-active {
-    color: #E81E61 !important;
-}
 
 /*HEADER END*/
 /*LEAD SECTION START*/
@@ -243,6 +241,7 @@ button:focus {
     background-position: center;
     padding-bottom: 0px;
     height: 100vh;
+    position: relative;
 }
 .lead-content {
     position: relative;
